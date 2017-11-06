@@ -1,0 +1,6 @@
+framework module Pods_JDYWebViewController_Tests {
+  umbrella header "Pods-JDYWebViewController_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

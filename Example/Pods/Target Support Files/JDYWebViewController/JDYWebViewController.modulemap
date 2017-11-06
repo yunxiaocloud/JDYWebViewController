@@ -1,0 +1,6 @@
+framework module JDYWebViewController {
+  umbrella header "JDYWebViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
