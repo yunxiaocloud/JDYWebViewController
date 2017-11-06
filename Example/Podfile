@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JDYWebViewController_Example' do
+  pod 'JDYWebViewController', :path => '../'
+
+  target 'JDYWebViewController_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
