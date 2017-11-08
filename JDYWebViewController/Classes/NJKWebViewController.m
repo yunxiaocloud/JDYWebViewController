@@ -213,7 +213,7 @@
 }
 
 - (void)turnToNextLevel:(NSNotification *)notic{
-    [self loadWebViewContent];
+    [self.webView reload];
 }
 
 -(void)dealloc
