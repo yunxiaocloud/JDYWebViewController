@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JDYWebViewController'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '封装的一个简单易用的WebView.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.

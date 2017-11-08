@@ -51,6 +51,9 @@
     [super viewDidLoad];
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
     [self createView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(turnToNextLevel:) name:@"comeFromH5View" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(turnToNextLevel:) name:@"reloadH5" object:nil];
 }
 
 #pragma mark 创建UI
@@ -120,7 +123,6 @@
     self.navigationItem.leftBarButtonItems = @[backButtonItem,closeButtonItem];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
 }
-
 //返回按钮action
 -(void)backAction{
     if([self.webView canGoBack]){
@@ -208,6 +210,15 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     
+}
+
+- (void)turnToNextLevel:(NSNotification *)notic{
+    [self loadWebViewContent];
+}
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
