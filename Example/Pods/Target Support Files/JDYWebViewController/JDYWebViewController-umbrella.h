@@ -11,8 +11,6 @@
 #endif
 
 #import "NJKWebViewController.h"
-#import "NJKWebViewProgress.h"
-#import "NJKWebViewProgressView.h"
 
 FOUNDATION_EXPORT double JDYWebViewControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char JDYWebViewControllerVersionString[];
