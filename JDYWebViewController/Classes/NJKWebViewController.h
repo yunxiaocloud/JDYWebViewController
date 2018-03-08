@@ -20,8 +20,9 @@ typedef void(^JSLogicBlock)(NSString * jsName);
 @property(nonatomic,copy)dispatch_block_t ClickBackBtnDirectBlock; //点击返回键不关闭页面的响应事件
 @property(nonatomic,copy)JSLogicBlock jumpLogic;
 
+@property(nonatomic,strong)UIWebView * webView;
 @property(nonatomic,assign)LOADWEBType webLoadType;
 @property(nonatomic,strong)NSString * loadTypeHtmlString;
-@property(nonatomic,copy)NSString * url;
+@property(nonatomic,copy)  NSString * url;
 
 @end

@@ -8,10 +8,10 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JDYWebViewController'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = '封装的一个简单易用的WebView.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: 修复进度条问题
                        DESC
 
   s.homepage         = 'http://yuncloud.xyz/'

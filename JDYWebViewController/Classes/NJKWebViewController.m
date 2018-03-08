@@ -15,9 +15,8 @@
 #import "NJKWebViewProgressView.h"
 #import "NJKWebViewProgress.h"
 
-@interface NJKWebViewController ()<UIWebViewDelegate,UIGestureRecognizerDelegate,NJKWebViewProgressDelegate>
+@interface NJKWebViewController ()<UIWebViewDelegate,UIGestureRecognizerDelegate>
 
-@property(nonatomic,strong)UIWebView * webView;
 @property (nonatomic,strong) UIProgressView *progress;
 //直接关闭按钮
 @property(nonatomic,strong)UIButton * closeButton;
@@ -25,15 +24,10 @@
 @end
 
 @implementation NJKWebViewController
-{
-    NJKWebViewProgressView *_NJProgressView;
-    NJKWebViewProgress     *_NJProgressProxy;
-}
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar addSubview:_NJProgressView];
     [self.navigationController setNavigationBarHidden:NO];
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:94/255.0 green:214/255.0 blue:253/255.0 alpha:1.0];
@@ -44,7 +38,6 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [_NJProgressView removeFromSuperview];
 }
 
 - (void)viewDidLoad {
@@ -60,13 +53,13 @@
 -(void)createView
 {
     [self.view addSubview:self.webView];
+    [self.view addSubview:self.progress];
     [self loadWebViewContent];
 }
 
 #pragma mark 加载数据源
 -(void)loadWebViewContent
 {
-    [self configurationWebNavigateProgress];
     if(self.webLoadType == LOADHtml)
     {
         [_webView loadHTMLString:_loadTypeHtmlString baseURL:nil];
@@ -93,7 +86,7 @@
     if (_progress == nil)
     {
         _progress = [[UIProgressView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 2)];
-        _progress.tintColor = [UIColor blueColor];
+        _progress.tintColor = [UIColor colorWithRed:253.f / 255.f green:181.f / 255.f blue:59.f / 255.f alpha:1.0];
         _progress.backgroundColor = [UIColor lightGrayColor];
         [self.view addSubview:_progress];
     }
@@ -136,8 +129,7 @@
 //返回跳转封装
 -(void)backToMethod{
     
-    if(self.ClickBackBtnDirectBlock)
-    {
+    if(self.ClickBackBtnDirectBlock){
         self.ClickBackBtnDirectBlock();
         return;
     }
@@ -149,30 +141,6 @@
     } else {
         [self.navigationController popViewControllerAnimated:YES];
     }
-}
-
-#pragma mark NJKWebViewProgressDelegate
-- (void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress{
-    [_NJProgressView setProgress:progress animated:YES];
-}
-
-#pragma mark 加载进度条
-- (void)configurationWebNavigateProgress{
-    
-    if (!_NJProgressProxy) {
-        _NJProgressProxy = [[NJKWebViewProgress alloc]init];
-    }else{
-        //不再创建新的对象
-    }
-    _webView.delegate = _NJProgressProxy;
-    _NJProgressProxy.webViewProxyDelegate = self;
-    _NJProgressProxy.progressDelegate = self;
-    
-    CGFloat progressBarH = 2.0f;
-    CGRect navigationBarBounds = self.navigationController.navigationBar.bounds;
-    CGRect barFrame = CGRectMake(0, navigationBarBounds.size.height - progressBarH, navigationBarBounds.size.width, progressBarH);
-    _NJProgressView = [[NJKWebViewProgressView alloc]initWithFrame:barFrame];
-    _NJProgressView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
 }
 
 
@@ -194,11 +162,16 @@
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView{
-    
+    self.progress.hidden = NO;
+    self.progress.progress = 0;
+    [self.progress setProgress:0.8 animated:YES];
 }
 
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
+    [self.progress setProgress:1.0 animated:YES];
+    self.progress.progress = 0;
+    self.progress.hidden = YES;
     NSString *theTitle=[webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     if (theTitle.length > 10) {
         theTitle = [[theTitle substringToIndex:9] stringByAppendingString:@"…"];

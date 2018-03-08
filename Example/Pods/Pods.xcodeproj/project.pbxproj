@@ -12,8 +12,6 @@
 		15C21B2871331F71C5E84A2CFC85782A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123D962D63F9B49EFA68E5DF0D35C95D /* UIKit.framework */; };
 		19F92260CCA7A0395C9F513D512D2D34 /* JDYWebViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39FBC08FEFF8CBA5459DA2BC07F92FB1 /* JDYWebViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
-		2640AB2B212338734FEC19501C02DEC7 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D22830BFE35064F5FCFB413670CCA5AD /* NJKWebViewProgressView.m */; };
-		2DBABD4A88EF3BF59DECB170EDEEF1F4 /* NJKWebViewProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = A87E442C538F48697BBA5FC75C655F8E /* NJKWebViewProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
 		3D855951F953BE6C48B1FFEA1F341B64 /* Pods-JDYWebViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 152188B739D11C8C4BFCAB71C96F3895 /* Pods-JDYWebViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,12 +27,9 @@
 		841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123D962D63F9B49EFA68E5DF0D35C95D /* UIKit.framework */; };
 		91D0138ACFAD733E4061F12E450C336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64771681F7D670ED1FB8E24BFB017797 /* Foundation.framework */; };
 		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B47A30FEA1173290339DF743705C78B /* NJKWebViewProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94DB73222E601EFF397EBB8F8F56BD1F /* NJKWebViewProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DA8DD5576A68A50020F5043484089FA /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 632045AE1FA7F1818568069489D1F6E1 /* NJKWebViewProgress.m */; };
 		9FADA3AB3227E3C1B89AC24518CA9264 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64771681F7D670ED1FB8E24BFB017797 /* Foundation.framework */; };
 		A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
 		B27DFD6025D94758785918F1D6F6C060 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F8B91838D9E2DE42AF01ABF5DC7B18 /* QuartzCore.framework */; };
-		B65DEBA35C756004F03D6A9B108F1BDD /* NJKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5169DA53C60CA7DB93338A6E30067FB0 /* NJKWebViewController.m */; };
 		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
@@ -44,7 +39,8 @@
 		CD3DD912872BBBF00BBFC7782EEDEC03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64771681F7D670ED1FB8E24BFB017797 /* Foundation.framework */; };
 		D5B6998F3B69673ABBB0C4829D118010 /* Pods-JDYWebViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D64581693417D0D5A148377CBF2A76E1 /* Pods-JDYWebViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
-		FC1347F2A99D8A27BBF800BB898D0B22 /* NJKWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1817D95E58BF4233C347C9B631F5DD5E /* NJKWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB8E2444205104710036AAF3 /* NJKWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FB8E2442205104710036AAF3 /* NJKWebViewController.h */; };
+		FB8E2445205104710036AAF3 /* NJKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8E2443205104710036AAF3 /* NJKWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +68,6 @@
 		123D962D63F9B49EFA68E5DF0D35C95D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		152188B739D11C8C4BFCAB71C96F3895 /* Pods-JDYWebViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JDYWebViewController_Example-umbrella.h"; sourceTree = "<group>"; };
-		1817D95E58BF4233C347C9B631F5DD5E /* NJKWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NJKWebViewController.h; path = JDYWebViewController/Classes/NJKWebViewController.h; sourceTree = "<group>"; };
 		1865C9767A92B6060FC23C794A887BCB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2660D977E64707382C02261597A071F0 /* JDYWebViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JDYWebViewController-dummy.m"; sourceTree = "<group>"; };
 		2E33C50C948F23B2B4F34F3F38D9E2E5 /* Pods-JDYWebViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JDYWebViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -82,38 +77,33 @@
 		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		4ABD4B2A1C7BAAC56C6D62269106656E /* Pods-JDYWebViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JDYWebViewController_Tests.modulemap"; sourceTree = "<group>"; };
-		4B847FD7DB4AFE50F37D16C176824294 /* JDYWebViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JDYWebViewController.modulemap; sourceTree = "<group>"; };
-		5169DA53C60CA7DB93338A6E30067FB0 /* NJKWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewController.m; path = JDYWebViewController/Classes/NJKWebViewController.m; sourceTree = "<group>"; };
+		4ABD4B2A1C7BAAC56C6D62269106656E /* Pods-JDYWebViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JDYWebViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		4B847FD7DB4AFE50F37D16C176824294 /* JDYWebViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JDYWebViewController.modulemap; sourceTree = "<group>"; };
 		52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		632045AE1FA7F1818568069489D1F6E1 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgress.m; path = JDYWebViewController/Classes/NJKWebViewProgress.m; sourceTree = "<group>"; };
 		64771681F7D670ED1FB8E24BFB017797 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		65CB4A962A2069F818686E987676225B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
-		6E5ECD0927A6C790A42CC2E3D2222AD0 /* Pods_JDYWebViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JDYWebViewController_Example.framework; path = "Pods-JDYWebViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5ECD0927A6C790A42CC2E3D2222AD0 /* Pods_JDYWebViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JDYWebViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E66B4218824CF8160D93713DDBEEA82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71D2E3CF82D80CE4D0DF7D31A7E9226C /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D2E3CF82D80CE4D0DF7D31A7E9226C /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		7A159A70C47B294453050BE4039A98F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A3CD853D1F377C5916F4FCCFDBD2D56 /* Pods-JDYWebViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JDYWebViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7CF1D870D01010E061CDE2AC7F923293 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		823558E8AC8EB39D028DB5FBBEA227A3 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		823558E8AC8EB39D028DB5FBBEA227A3 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		846F7FC61CA1CB05AA67ACC9F85D4EF9 /* Pods-JDYWebViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JDYWebViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		89212D0A0C0818E650FE5B6C1C13BCF7 /* Pods-JDYWebViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JDYWebViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		89B8AEADF3427285022C98766C278402 /* JDYWebViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JDYWebViewController.framework; path = JDYWebViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B8AEADF3427285022C98766C278402 /* JDYWebViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDYWebViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B956FE5B629457EC18A14D372B53DA /* Pods-JDYWebViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JDYWebViewController_Tests-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94DB73222E601EFF397EBB8F8F56BD1F /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgressView.h; path = JDYWebViewController/Classes/NJKWebViewProgressView.h; sourceTree = "<group>"; };
-		9B4F7E85306B68781294A5192B8184DA /* Pods_JDYWebViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JDYWebViewController_Tests.framework; path = "Pods-JDYWebViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A87E442C538F48697BBA5FC75C655F8E /* NJKWebViewProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgress.h; path = JDYWebViewController/Classes/NJKWebViewProgress.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B4F7E85306B68781294A5192B8184DA /* Pods_JDYWebViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JDYWebViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		C0F7ACA8365870BCE3F6AE32812178F4 /* Pods-JDYWebViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JDYWebViewController_Example.modulemap"; sourceTree = "<group>"; };
+		C0F7ACA8365870BCE3F6AE32812178F4 /* Pods-JDYWebViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JDYWebViewController_Example.modulemap"; sourceTree = "<group>"; };
 		CA83F2C4371A24B9FC91CD5F577BFD6C /* Pods-JDYWebViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JDYWebViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CC12BCFA3FC0B8C307F5B38C673EDD12 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		D22830BFE35064F5FCFB413670CCA5AD /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgressView.m; path = JDYWebViewController/Classes/NJKWebViewProgressView.m; sourceTree = "<group>"; };
 		D64581693417D0D5A148377CBF2A76E1 /* Pods-JDYWebViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JDYWebViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		DAB33880EDE5FBEE0DD1F39CF578C885 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +118,8 @@
 		F121D9C24AB2CDB7AD63398D0544A57D /* Pods-JDYWebViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JDYWebViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F70336CD5679F1297030B301EF74ED37 /* Pods-JDYWebViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JDYWebViewController_Example-dummy.m"; sourceTree = "<group>"; };
 		F9F8B91838D9E2DE42AF01ABF5DC7B18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FB8E2442205104710036AAF3 /* NJKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NJKWebViewController.h; path = JDYWebViewController/Classes/NJKWebViewController.h; sourceTree = "<group>"; };
+		FB8E2443205104710036AAF3 /* NJKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewController.m; path = JDYWebViewController/Classes/NJKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,12 +175,8 @@
 		0E11DDF27DC9899DC866B7569E78684A /* JDYWebViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1817D95E58BF4233C347C9B631F5DD5E /* NJKWebViewController.h */,
-				5169DA53C60CA7DB93338A6E30067FB0 /* NJKWebViewController.m */,
-				A87E442C538F48697BBA5FC75C655F8E /* NJKWebViewProgress.h */,
-				632045AE1FA7F1818568069489D1F6E1 /* NJKWebViewProgress.m */,
-				94DB73222E601EFF397EBB8F8F56BD1F /* NJKWebViewProgressView.h */,
-				D22830BFE35064F5FCFB413670CCA5AD /* NJKWebViewProgressView.m */,
+				FB8E2442205104710036AAF3 /* NJKWebViewController.h */,
+				FB8E2443205104710036AAF3 /* NJKWebViewController.m */,
 				AA1ABFBB831E19E9018CCA11AB1255B8 /* Support Files */,
 			);
 			name = JDYWebViewController;
@@ -224,7 +212,6 @@
 				1549F91FCD089822594C1F5DB8AB9E8F /* Support Files */,
 				99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -382,9 +369,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F92260CCA7A0395C9F513D512D2D34 /* JDYWebViewController-umbrella.h in Headers */,
-				FC1347F2A99D8A27BBF800BB898D0B22 /* NJKWebViewController.h in Headers */,
-				2DBABD4A88EF3BF59DECB170EDEEF1F4 /* NJKWebViewProgress.h in Headers */,
-				9B47A30FEA1173290339DF743705C78B /* NJKWebViewProgressView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +376,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8E2444205104710036AAF3 /* NJKWebViewController.h in Headers */,
 				B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */,
 				9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */,
 				BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */,
@@ -511,9 +496,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E0F41B856A630149BD834620063952A /* JDYWebViewController-dummy.m in Sources */,
-				B65DEBA35C756004F03D6A9B108F1BDD /* NJKWebViewController.m in Sources */,
-				9DA8DD5576A68A50020F5043484089FA /* NJKWebViewProgress.m in Sources */,
-				2640AB2B212338734FEC19501C02DEC7 /* NJKWebViewProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */,
+				FB8E2445205104710036AAF3 /* NJKWebViewController.m in Sources */,
 				BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */,
 				DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */,
 				A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */,
