@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version          = '1.0.3'
   s.summary          = '封装的一个简单易用的WebView.'
   s.description      = <<-DESC
-TODO: 修复进度条问题
+TODO: Add long description of the pod here."修复进度条问题"
                        DESC
 
   s.homepage         = 'http://yuncloud.xyz/'
