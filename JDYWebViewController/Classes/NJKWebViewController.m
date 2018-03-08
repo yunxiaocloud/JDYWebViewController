@@ -12,8 +12,6 @@
 #define NAVIGATION_height  self.navigationController.navigationBar.frame.size.height
 
 #import "NJKWebViewController.h"
-#import "NJKWebViewProgressView.h"
-#import "NJKWebViewProgress.h"
 
 @interface NJKWebViewController ()<UIWebViewDelegate,UIGestureRecognizerDelegate>
 
