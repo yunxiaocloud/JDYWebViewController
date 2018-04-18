@@ -12,12 +12,14 @@
 #define NAVIGATION_height  self.navigationController.navigationBar.frame.size.height
 
 #import "NJKWebViewController.h"
+#import "ODRefreshControl.h"
 
 @interface NJKWebViewController ()<UIWebViewDelegate,UIGestureRecognizerDelegate>
 
 @property (nonatomic,strong) UIProgressView *progress;
 //直接关闭按钮
 @property(nonatomic,strong)UIButton * closeButton;
+@property(nonatomic,strong)ODRefreshControl * refreshControl;
 
 @end
 
@@ -74,8 +76,15 @@
     {
         _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - STATUS_height - NAVIGATION_height)];
         _webView.delegate = self;
+        self.refreshControl = [[ODRefreshControl alloc] initInScrollView:_webView.scrollView];
+        [self.refreshControl addTarget:self action:@selector(updateWebView) forControlEvents:UIControlEventValueChanged];
     }
     return _webView;
+}
+
+-(void)updateWebView
+{
+    [self.webView reload];
 }
 
 #pragma mark 加载进度条
@@ -170,6 +179,7 @@
     [self.progress setProgress:1.0 animated:YES];
     self.progress.progress = 0;
     self.progress.hidden = YES;
+    [self.refreshControl endRefreshing];
     NSString *theTitle=[webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     if (theTitle.length > 10) {
         theTitle = [[theTitle substringToIndex:9] stringByAppendingString:@"…"];
@@ -180,7 +190,10 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-    
+    [self.progress setProgress:1.0 animated:YES];
+    self.progress.progress = 0;
+    self.progress.hidden = YES;
+    [self.refreshControl endRefreshing];
 }
 
 - (void)turnToNextLevel:(NSNotification *)notic{
