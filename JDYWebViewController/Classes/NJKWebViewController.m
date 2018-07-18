@@ -65,8 +65,16 @@
         [_webView loadHTMLString:_loadTypeHtmlString baseURL:nil];
     }else
     {
-        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
+        [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self formatStrURL]]]];
     }
+}
+
+//格式化H5链接
+-(NSString *)formatStrURL
+{
+    NSString *str = self.url;
+    NSString *newStr = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    return newStr;
 }
 
 #pragma mark 创建UIWebView
